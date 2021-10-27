@@ -16,7 +16,7 @@ async function run() {
 console.log('database connected')
     const database = client.db('spread-hands');
     const events = database.collection('events');
-    const insertedData=await events.insertOne({name:'heroku'})
+    
 
     // load data
     app.get('/events',async(req,res)=>{
