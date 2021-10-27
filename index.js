@@ -36,6 +36,10 @@ app.get('/',(req,res)=>{
     res.send('hello i am from node js')
 
 })
+app.get('/test',(req,res)=>{
+    res.send('hello i am from node js for testing')
+
+})
 app.listen(port,()=>{
     console.log('the server is running')
 })
